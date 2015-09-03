@@ -1,7 +1,7 @@
 User Management System
 ==
 
-*Example solution of given Front-end Developer task.*
+*Example solution of given Front-end Developer task*
 
 **Live example** of the solution: http://www.bretick.cz/uploads/projects/umsapp/index.html
 
