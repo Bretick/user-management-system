@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<title>User Management System &ndash; InterNations &ndash; Connecting global minds</title>
+		<meta name="description" content="User Management System - Frontend Developer Task" />
+		<meta name="author" content="Bretislav Mazoch, bretislav.mazoch@gmail.com, http://www.bretick.cz/en/" />
+  	    
+	    <link rel="stylesheet" href="./css/normalize.css" />
+	    <link rel="stylesheet" href="./css/style.css" />
+		
+	</head>
+
+	<body>
+		
+		<div class="content">
+			
+			<header>
+				<h1>User Management System</h1>
+				<strong>Frontend Developer Task</strong>
+			</header>
+			
+			<section id="groups">
+				
+				<h2>Groups</h2>
+
+					<div class="center-position">
+						<label>
+							<span>Group name:</span>
+							<input class="group-name" type="text" name="groupname" placeholder="Type a group name&hellip;" />
+						</label>
+						<button title="Add a new group" type="submit" class="btn-add-group">Add a new group</button>
+					</div>
+					
+					<table>
+						<thead>
+							<tr>
+								<th width="10%">Group ID</th>
+								<th width="55%">Group name</th>
+								<th width="10%">Number of users</th>
+								<th width="25%">Action</th>
+							</tr>
+						</thead>
+						
+						<tbody>
+							<tr>
+								<td colspan="4"><p><em>There is no group created.</em></p></td>
+							</tr>
+							<tr>
+								<td>#0</td>
+								<td>Unspecified</td>
+								<td>5</td>
+								<td><em>Default group</em></td>
+							</tr>
+							<tr>
+								<td>#1</td>
+								<td>Internations</td>
+								<td>20</td>
+								<td><button title="Remove group" class="btn-delete-group" value="1">Remove</button></td>
+							</tr>
+						</tbody>
+					</table>				
+			
+				
+			</section>
+			<!--ends section #groups-->
+			
+						
+			<section id="users">
+				
+				<h2>Users</h2>
+				
+					<div class="center-position">
+						<label>
+							<span>Username:</span>
+							<input class="input-username" type="text" name="username" placeholder="Type a username&hellip;" />
+						</label>
+						
+						<label>
+							<span>Group:</span>
+							<select class="select-group" name="groupSelection">
+							  <option value="1">Unspecified</option>
+							  <option value="2">Internations</option>
+							</select>
+						</label>
+						
+						<button title="Add a new user" type="submit" class="btn-add-user">Add a new user</button>
+					</div>
+
+
+					<table>
+						<thead>
+							<tr>
+								<th width="10%">User ID</th>
+								<th width="35%">Username</th>
+								<th width="35%">Group</th>
+								<th width="20%">Action</th>
+							</tr>
+						</thead>
+						
+						<tbody>
+							<tr>
+								<td colspan="4"><p><em>There is no user created.</em></p></td>
+							</tr>
+							<tr>
+								<td>#0</td>
+								<td>Bretick</td>
+								<td>
+									<select class="select-group" name="groupOfUser1">
+									  <option value="1" selected>Unspecified</option>
+									  <option value="2">Internations</option>
+									</select>
+								</td>
+								<td><button title="Remove user" class="btn-delete-user" value="0">Remove</button></td>
+							</tr>
+							<tr>
+								<td>#1</td>
+								<td>Another</td>
+								<td>
+									<select class="select-group" name="groupOfUser2">
+									  <option value="1">Unspecified</option>
+									  <option value="2" selected>Internations</option>
+									</select>
+								</td>
+								<td><button class="btn-delete-user" value="1">Remove user</button></td>
+							</tr>
+						</tbody>
+					</table>			
+          				
+			</section>
+			<!--ends section #users-->
+
+
+			<footer>
+				<p>
+					User Management System &ndash; Frontend Developer Task &ndash; Created for by <strong>Bretislav Mazoch</strong>, <a target="_blank" title="http://www.bretick.cz/en/" href="http://www.bretick.cz/en/"><strong>www.bretick.cz</strong></a>
+				</p>
+			</footer>
+			
+			
+		</div>
+		<!--ends .content-->
+		
+		
+		<script src="./app/jquery-1.11.3.min.js"></script>
+		<script src="./app/AppModel.js"></script>
+		<script src="./app/AppView.js"></script>
+		<script src="./app/AppController.js"></script>
+		<script src="./app/Ums.js"></script>
+		
+		
+			
+		<script>
+			$(document).ready(function() {
+				new Ums.App();			
+			});
+		</script>		
+		
+		
+		
+	</body>
+</html>

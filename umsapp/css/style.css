@@ -1,0 +1,335 @@
+
+/*------------------------------------*\
+    FONTS
+\*------------------------------------*/
+
+/* Webfont: AllerRegular */@font-face {
+    font-family: 'AllerRegular';
+    src: url('./type/Aller_Rg.ttf') format('truetype'); 
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: AllerLight */@font-face {
+    font-family: 'AllerLight';
+    src: url('./type/Aller_Lt.ttf') format('truetype'); 
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: AllerBold */@font-face {
+    font-family: 'AllerBold';
+    src: url('./type/Aller_Bd.ttf') format('truetype'); 
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------*\
+    BASE
+\*------------------------------------*/
+
+body {
+  background: #1abc9d;
+  color: #555;
+  font-family: AllerRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+}
+
+h1, h2 {
+  font-family: AllerBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h1 {
+  color: #fff;
+  margin: 2em auto 0.25em;
+  font-size: 250%;
+  letter-spacing: 0.3em;
+}
+
+h2 {
+  font-size: 150%;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #23ffd5;
+}
+
+
+.display-none {
+	display: none;
+}
+
+
+
+
+
+
+
+/*------------------------------------*\
+    CONTENT
+\*------------------------------------*/
+
+header {
+  margin-bottom: 75px;
+  text-align: center;
+  color: #107663;
+  letter-spacing: 0.3em;
+}
+
+header strong {
+  font-size: 120%;
+  font-weight: normal;
+  font-family: AllerBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+
+
+
+footer { 
+  color: #107663;
+  text-align: center;
+  margin-bottom: 100px;
+  padding: 20px;
+}
+
+footer a { 
+  color: #107663;
+}
+
+
+
+
+
+.center-position {
+	position: relative;
+	display: block;
+	text-align: center;
+}
+
+.content {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+
+
+
+
+#users, #groups {
+  position: relative;
+  vertical-align: top;
+  display: inline-block;
+  background: #edeff1;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 7px;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+#users {
+  width: 65%;
+  min-width: 370px;
+}
+
+#groups {
+  width: 34%;
+  min-width: 370px;
+  background: #18ad90;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 980px) {
+	#users, #groups {
+	  position: relative;
+	  margin: 0 auto;
+	  display: block;
+	  width: 90%;
+  	  min-width: 90%;
+  	  margin-bottom: 10px;
+	}
+}
+
+
+
+
+
+label {
+  display: inline-block;
+  margin-right: 5px;
+  margin-top: 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+label span {
+  font-size: 100%;
+  font-family: AllerLight, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #aaa;
+}
+
+#groups label span {
+  color: #0d6050;
+}
+
+input[type="text"], select {
+  display: block;
+  background: #fff;
+  width: 250px;
+  border: 0px;
+  padding: 15px 10px 15px 10px;
+  margin-top: 5px;
+  border: 2px solid #fff;
+  transition: all 0.3s ease;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+input[type="text"]:focus {
+  border: 2px solid #1abc9d
+}
+
+input[type="submit"], button {
+  display: block;
+  margin: 0 auto;
+  background: #1abc9d;
+  font-family: AllerBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 110%;
+  width: 200px;
+  padding: 20px 10px 20px 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  color: #fff;
+  border: 3px solid #09cca6;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover, button:hover {
+  background: #09cca6;
+}
+
+::-webkit-input-placeholder {
+  color: #cecece;
+  font-family: AllerLight, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #cecece;  
+  font-family: AllerLight;, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #cecece;  
+  font-family: AllerLight, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+:-ms-input-placeholder {  
+  color: #cecece;  
+  font-family: AllerLight, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+input.btn-delete-user[type="submit"], button.btn-delete-user,
+input.btn-delete-group[type="submit"], button.btn-delete-group {
+  display: inline-block;
+  background: #c24545;
+  width: 100%;
+  padding: 10px;
+  font-size: 100%;
+  border: 3px solid #db4e4e;
+  margin-top: 0px;
+}
+
+input.btn-delete-user[type="submit"]:hover, button.btn-delete-user:hover,
+input.btn-delete-group[type="submit"]:hover, button.btn-delete-group:hover {
+  background: #db4e4e;
+}
+
+
+
+
+
+table {
+  width: 100%;
+  margin-top: 50px;
+}
+
+table select {
+  display: inline-block;
+  width: 100%;
+}
+
+th {
+  padding: 20px 10px 20px 10px;
+  border: 1px solid #e0e0e0;
+  border-bottom-width: 5px;
+}
+
+#groups th {
+  border-color: #16a085;
+}
+
+th:last-child {
+  border-right: none;
+}
+
+th:first-child {
+  border-left: none;
+}
+
+td {
+  padding: 10px 10px 10px 10px;
+  background: #fff;
+  margin-bottom: 5px;
+  border: 1px solid #edeff1;
+  text-align: center;
+}
+
+#groups td {
+  border-color: #16a085;
+  background: #1dd0ae;
+}
+
+td:last-child {
+  border-right: none;
+}
+
+td:first-child {
+  border-left: none;
+}
+
+
+
+
+
+
+
+
+
