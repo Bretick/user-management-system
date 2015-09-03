@@ -6,13 +6,13 @@ User Management System
 **Live example** of the solution: http://www.bretick.cz/uploads/projects/umsapp/index.html
 
 **Shortcut to core JS files of the app:**
-* Ums.App class
+* Ums.App class<br /> 
 https://github.com/Bretick/user-management-system/blob/master/umsapp/app/Ums.js
-* Ums.AppModel class
+* Ums.AppModel class<br /> 
 https://github.com/Bretick/user-management-system/blob/master/umsapp/app/AppModel.js
-* Ums.AppView class
+* Ums.AppView class<br /> 
 https://github.com/Bretick/user-management-system/blob/master/umsapp/app/AppView.js
-* Ums.AppController class
+* Ums.AppController class<br /> 
 https://github.com/Bretick/user-management-system/blob/master/umsapp/app/AppController.js
 
 
