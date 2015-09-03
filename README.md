@@ -6,10 +6,14 @@ User Management System
 **Live example** of the solution: http://www.bretick.cz/uploads/projects/umsapp/index.html
 
 **Shortcut to core JS files of the app:**
-* Viewer3D.App class - https://github.com/Bretick/3d-viewer/blob/master/viewer3d/app/Viewer3D.js
-* Viewer3D.AppModel class - https://github.com/Bretick/3d-viewer/blob/master/viewer3d/app/AppModel.js
-* Viewer3D.AppView class - https://github.com/Bretick/3d-viewer/blob/master/viewer3d/app/AppView.js
-* Viewer3D.AppController class - https://github.com/Bretick/3d-viewer/blob/master/viewer3d/app/AppController.js
+* Ums.App class
+https://github.com/Bretick/user-management-system/blob/master/umsapp/app/Ums.js
+* Ums.AppModel class
+https://github.com/Bretick/user-management-system/blob/master/umsapp/app/AppModel.js
+* Ums.AppView class
+https://github.com/Bretick/user-management-system/blob/master/umsapp/app/AppView.js
+* Ums.AppController class
+https://github.com/Bretick/user-management-system/blob/master/umsapp/app/AppController.js
 
 
 Assignment of the task
