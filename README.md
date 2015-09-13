@@ -4,7 +4,8 @@ User Management System
 *Example solution of given Front-end Developer task*
 
 **Live example** of the solution: http://www.bretick.cz/uploads/projects/umsapp/index.html
-<img src="http://www.bretick.cz/uploads/projects/ums/2015-07-user-management-system-ukazka01.png" /> 
+
+<img src="http://www.bretick.cz/uploads/projects/umsapp/2015-07-user-management-system-ukazka01.png" /> 
 
 
 **Shortcut** to core JS files of the app:
